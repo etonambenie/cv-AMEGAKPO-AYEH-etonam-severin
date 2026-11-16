@@ -1387,10 +1387,9 @@ export default function App() {
             </span>
           </div>
 
-          {/* Copyright & Vibe Coding */}
-          <div className="text-xs font-mono text-zinc-500 space-y-1">
+          {/* Copyright */}
+          <div className="text-xs font-mono text-zinc-500">
             <p>© {new Date().getFullYear()} etonam AMEGAKPO-AYEH. Tous droits réservés.</p>
-            <p className="text-zinc-600">Fait avec le vibe coding</p>
           </div>
         </div>
       </footer>
