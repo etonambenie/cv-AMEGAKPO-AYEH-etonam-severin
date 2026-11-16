@@ -438,13 +438,17 @@ export default function App() {
               : 'bg-encre/85 backdrop-blur-md border border-white/10 shadow-lg text-neige'
           } max-w-5xl w-full`}
         >
-          {/* Logo / Monogramme */}
+          {/* Logo / Photo miniature */}
           <a
             href="#hero"
             className="flex items-center gap-2.5 group link-lift cursor-pointer"
           >
-            <div className="w-8 h-8 rounded-full bg-corail text-white flex items-center justify-center font-mono text-xs font-bold tracking-wider">
-              EA
+            <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-corail shadow-sm flex items-center justify-center bg-encre shrink-0">
+              <img
+                src="/profile.jpg"
+                alt="Etonam AMEGAKPO-AYEH"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
             <div className="flex flex-col text-left">
               <span className="font-sans font-bold tracking-tight text-xs uppercase leading-none">
@@ -573,18 +577,34 @@ export default function App() {
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center">
-          {/* Badge OIF & Status */}
+          {/* Photo de Profil Officielle */}
           <div
             ref={heroBadgeRef}
-            className="mb-6 flex flex-wrap items-center justify-center gap-2.5"
+            className="mb-7 flex flex-col items-center"
           >
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-white/10 backdrop-blur-md text-xs font-mono text-zinc-300">
-              <Award className="w-3.5 h-3.5 text-corail" />
-              <span>Lauréat Programme D-Clic (OIF)</span>
+            <div className="relative mb-5 group">
+              <div className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-full p-[3px] bg-gradient-to-tr from-corail via-white/50 to-corail/70 shadow-2xl shadow-corail/35 flex items-center justify-center">
+                <img
+                  src="/profile.jpg"
+                  alt="Etonam AMEGAKPO-AYEH"
+                  className="w-full h-full rounded-full object-cover object-top border-2 border-encre"
+                />
+              </div>
+              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-graphite/95 border border-white/20 backdrop-blur-md px-3.5 py-0.5 rounded-full flex items-center gap-1.5 shadow-xl whitespace-nowrap">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span className="text-[10px] font-mono text-zinc-200 uppercase tracking-wider font-semibold">Disponible</span>
+              </div>
             </div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-corail/15 border border-corail/30 text-xs font-mono text-corail">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span>Lomé, Togo & International</span>
+
+            <div className="flex flex-wrap items-center justify-center gap-2.5">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-white/10 backdrop-blur-md text-xs font-mono text-zinc-300">
+                <Award className="w-3.5 h-3.5 text-corail" />
+                <span>Lauréat Programme D-Clic (OIF)</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-corail/15 border border-corail/30 text-xs font-mono text-corail">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span>Lomé, Togo & International</span>
+              </div>
             </div>
           </div>
 
@@ -1343,8 +1363,12 @@ export default function App() {
           {/* Identity */}
           <div className="space-y-2">
             <div className="flex items-center justify-center md:justify-start gap-2.5">
-              <div className="w-7 h-7 rounded-full bg-corail text-white flex items-center justify-center font-mono text-xs font-bold">
-                EA
+              <div className="w-8 h-8 rounded-full overflow-hidden border border-corail/60 shrink-0">
+                <img
+                  src="/profile.jpg"
+                  alt="Etonam AMEGAKPO-AYEH"
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
               <span className="font-bold text-neige text-base tracking-tight font-sans uppercase">
                 etonam AMEGAKPO-AYEH
